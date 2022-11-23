@@ -6,6 +6,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import NewReleasesIcon from "@mui/icons-material/NewReleases";
 import LogoutIcon from "@mui/icons-material/Logout";
 import logo from "./logo.png";
+import StoreIcon from "@mui/icons-material/Store";
 import {
   Card,
   Collapse,
@@ -53,7 +54,7 @@ export default function Navbar() {
                         marginBottom: 5,
                       }}
                     >
-                      <PersonIcon className="mr-2" /> Non-Business Owners{" "}
+                      <PersonIcon className="mr-2" /> Customer Accounts{" "}
                     </li>
                   </a>
                 </ListItemButton>
@@ -65,7 +66,7 @@ export default function Navbar() {
                         marginBottom: 5,
                       }}
                     >
-                      <PersonIcon className="mr-2" /> Business Owners{" "}
+                      <StoreIcon className="mr-2" /> Business Accounts{" "}
                     </li>
                   </a>
                 </ListItemButton>

@@ -45,7 +45,7 @@ function ActionButton() {
     </>
   );
 }
-
+const hrows = [];
 const rows = [
   {
     id: 1,
@@ -68,8 +68,31 @@ const rows = [
     name: "Daenerys",
   },
 ];
+const frows = [
+  {
+    id: 1,
+    name: "Eastwood",
+  },
+  {
+    id: 2,
+    name: "Eastwood",
+  },
+  {
+    id: 3,
+    name: "Eastwood",
+  },
+  {
+    id: 4,
+    name: "Eastwood",
+  },
+  {
+    id: 5,
+    name: "Eastwood",
+  },
+];
 
 export default function ViewNonBusinessOwners() {
+  const [Rows, setRows] = React.useState([]);
   return (
     <div
       style={{
@@ -90,8 +113,24 @@ export default function ViewNonBusinessOwners() {
             <h3>
               <b>John Doe</b>
             </h3>
-            <h6>John@gmail.com</h6>
-            <h6>(999) 000-11111</h6>
+            <h6>
+              <b>Account Handle: </b>@Johndoe
+            </h6>
+            <h6>
+              <b>Email: </b>John@gmail.com
+            </h6>
+            <h6>
+              <b>Phone No: </b>(999) 000-11111
+            </h6>
+            <p className="mt-4">
+              <b>Account created on: </b> 22/11/22
+            </p>
+            <p className="mt-4">
+              <b>Business Account: </b>{" "}
+              <a href="" style={{ color: "#00B94A" }}>
+                Business ID: 112233
+              </a>
+            </p>
           </div>
         </div>
         <div className="my-4">
@@ -145,16 +184,29 @@ export default function ViewNonBusinessOwners() {
             }}
           />
         </div>
+        <div>
+          <h3 className="py-2">
+            <b>Payment History</b>
+          </h3>
+          <DataGrid
+            style={{ height: "45vh", width: "100%" }}
+            columns={columns}
+            rows={hrows}
+            pageSize={4}
+            rowsPerPageOptions={[4]}
+            disableSelectionOnClick
+          />
+        </div>
         <div className="row my-4">
           <div className="col">
             <h3 className="py-2">
-              <b>Followers(120)</b>
+              <b>Following(120)</b>
             </h3>
 
             <DataGrid
               style={{ height: "45vh", width: "100%" }}
               columns={columns}
-              rows={rows}
+              rows={frows}
               // getRowId={(Rows) => Rows._id}
               pageSize={4}
               rowsPerPageOptions={[4]}
@@ -185,7 +237,7 @@ export default function ViewNonBusinessOwners() {
               textTransform: "uppercase",
             }}
           >
-            <b>INSIDER INCLUDED</b>
+            <b>INSIDER SUBSCRIPTIONS</b>
           </h2>
           <div className="col">
             <Card sx={{ maxWidth: 345 }}>

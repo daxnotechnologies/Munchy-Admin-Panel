@@ -103,9 +103,13 @@ export default function Support() {
           <div>
             <Card className="my-4">
               <CardContent>
+                <Typography gutterBottom variant="p" component="div">
+                  Business ID: 112233
+                </Typography>
                 <Typography gutterBottom variant="h5" component="div">
                   <b>Example Message Title</b>
                 </Typography>
+
                 <Typography
                   gutterBottom
                   variant="h6"
@@ -142,9 +146,13 @@ export default function Support() {
             </Card>
             <Card className="my-4">
               <CardContent>
+                <Typography gutterBottom variant="p" component="div">
+                  Business ID: 112233
+                </Typography>
                 <Typography gutterBottom variant="h5" component="div">
                   <b>Example Message Title</b>
                 </Typography>
+
                 <Typography
                   gutterBottom
                   variant="h6"
@@ -181,6 +189,9 @@ export default function Support() {
             </Card>
             <Card className="my-4">
               <CardContent>
+                <Typography gutterBottom variant="p" component="div">
+                  Customer ID: 112233
+                </Typography>
                 <Typography gutterBottom variant="h5" component="div">
                   <b>Example Message Title</b>
                 </Typography>

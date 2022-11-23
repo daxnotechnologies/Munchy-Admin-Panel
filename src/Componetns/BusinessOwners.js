@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/styles.css";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import {
   Card,
   Dialog,
@@ -184,7 +184,7 @@ export default function BusinessOwners() {
     >
       <Card style={{ padding: 30, borderRadius: 10 }}>
         <h1 className="mb-4 py-4" style={headings}>
-          <b>ALL BUSINESS OWNERS</b>
+          <b>ALL BUSINESS ACCOUNTS</b>
         </h1>
         {/* <div className="d-flex justify-content-end mb-4">
           <Button
@@ -258,6 +258,7 @@ export default function BusinessOwners() {
         </div> */}
         <div>
           <DataGrid
+            components={{ Toolbar: GridToolbar }}
             style={{ height: "65vh", width: "100%" }}
             columns={columns}
             rows={rows}
