@@ -78,109 +78,118 @@ export default function ViewBusinessOwners() {
       }}
     >
       <Card style={{ padding: 30, borderRadius: 10 }}>
-        <div
-          style={{
-            backgroundImage: `url(${Hotel})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "20vh",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+        <div className="col">
           <div
+            class="z-index-n1"
             style={{
-              color: "#fff",
-              padding: 20,
+              backgroundImage: `url(${Hotel})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "20vh",
+              backgroundRepeat: "no-repeat",
             }}
           >
-            <h3>
-              <b>Eastwood</b>
-            </h3>
-            <h6>
-              <b>User ID: </b>112233
-            </h6>
-            <h6>Bar & Restaurant</h6>
-            <h6>@eastwoodnyc</h6>
-          </div>
-        </div>
-        <div className="row">
-          <div className="mt-4 pt-4">
-            <h6>
-              <b>Headline:</b>
-            </h6>
-            <p>Headline Here</p>
-
-            <h6>
-              <b>Description:</b>
-            </h6>
-            <p>Description Here</p>
-          </div>
-          <div className="col">
-            <div className="mt-4 ">
-              <h6>
-                <b>BUSINESS TYPE: </b> Restaurant
-              </h6>
-            </div>
-            <div className="mt-3">
-              <h6>
-                <b>PRICE RANGE: </b> $$$
-              </h6>
-            </div>
-            <div className="mt-3">
-              <h6>
-                <b>BUSINESS HOURS</b>
-              </h6>
-              <ul>
-                <li>Monday: 10:00am - 10:00pm</li>
-                <li>Tuesday: 10:00am - 10:00pm</li>
-                <li>Wednesday: 10:00am - 10:00pm</li>
-                <li>Thuruday: 10:00am - 10:00pm</li>
-                <li>Friday: 10:00am - 10:00pm</li>
-                <li>Saturday: 10:00am - 10:00pm</li>
-              </ul>
-            </div>
-          </div>
-          <div className="col">
-            <div className="mt-4 pt-4">
-              <h6>
-                <b>LINKS</b>
-              </h6>
-              <ul>
-                <li>
-                  Website: <a href="">www.example.com</a>
-                </li>
-                <li>
-                  Phone Number: <a href="tel">+91-7872378</a>
-                </li>
-
-                <li>
-                  FaceBook: <a href="">www.example.com</a>
-                </li>
-                <li>
-                  Instagram: <a href="">www.example.com</a>
-                </li>
-                <li>
-                  Yelp: <a href="">www.example.com</a>
-                </li>
-                <li>
-                  Menu: <a href="">www.example.com</a>
-                </li>
-                <li>
-                  Resevations: <a href="">www.example.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col">
-            <div className="mt-4 pt-4">
-              <h6>
-                <b>BANKING DETAILS</b>
-              </h6>
+            <div
+              style={{
+                color: "#fff",
+                padding: 20,
+                backgroundColor: "#000",
+                height: "20vh",
+                opacity: "0.75",
+              }}
+            >
+              <div>
+                <h3>
+                  <b>Eastwood</b>
+                </h3>
+                <h6>
+                  <b>User ID: </b>112233
+                </h6>
+                <h6>Bar & Restaurant</h6>
+                <h6>@eastwoodnyc</h6>
+              </div>
             </div>
           </div>
         </div>
+        <div>
+          <div className="row">
+            <div className="mt-4 pt-4">
+              <h6>
+                <b>Headline:</b>
+              </h6>
+              <p>Headline Here</p>
 
+              <h6>
+                <b>Description:</b>
+              </h6>
+              <p>Description Here</p>
+            </div>
+            <div className="col">
+              <div className="mt-4 ">
+                <h6>
+                  <b>BUSINESS TYPE: </b> Restaurant
+                </h6>
+              </div>
+              <div className="mt-3">
+                <h6>
+                  <b>PRICE RANGE: </b> $$$
+                </h6>
+              </div>
+              <div className="mt-3">
+                <h6>
+                  <b>BUSINESS HOURS</b>
+                </h6>
+                <ul>
+                  <li>Monday: 10:00am - 10:00pm</li>
+                  <li>Tuesday: 10:00am - 10:00pm</li>
+                  <li>Wednesday: 10:00am - 10:00pm</li>
+                  <li>Thuruday: 10:00am - 10:00pm</li>
+                  <li>Friday: 10:00am - 10:00pm</li>
+                  <li>Saturday: 10:00am - 10:00pm</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col">
+              <div className="mt-4 pt-4">
+                <h6>
+                  <b>LINKS</b>
+                </h6>
+                <ul>
+                  <li>
+                    Website: <a href="">www.example.com</a>
+                  </li>
+                  <li>
+                    Phone Number: <a href="tel">+91-7872378</a>
+                  </li>
+
+                  <li>
+                    FaceBook: <a href="">www.example.com</a>
+                  </li>
+                  <li>
+                    Instagram: <a href="">www.example.com</a>
+                  </li>
+                  <li>
+                    Yelp: <a href="">www.example.com</a>
+                  </li>
+                  <li>
+                    Menu: <a href="">www.example.com</a>
+                  </li>
+                  <li>
+                    Resevations: <a href="">www.example.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col">
+              <div className="mt-4 pt-4">
+                <h6>
+                  <b>BANKING DETAILS</b>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
         <div>
           <div className="row d-flex justify-content-center p-4">
             <div
@@ -213,7 +222,7 @@ export default function ViewBusinessOwners() {
         </div>
         <div className="mt-4">
           <h3 className="py-2">
-            <b>Following(120)</b>
+            <b>Followers(120)</b>
           </h3>
           <DataGrid
             style={{ height: "30vh", width: "100%" }}
